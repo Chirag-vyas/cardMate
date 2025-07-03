@@ -1,6 +1,6 @@
 import { Image, StyleSheet, View, Text } from 'react-native';
 
-export default function HomeScreen() {
+export default function MyCards() {
   return (
     <View style={styles.container}>
       <Image source={require('@/assets/images/cardMateLogo.png')} style={styles.logo} />

@@ -9,7 +9,11 @@ import { OpaqueColorValue, StyleProp, ViewStyle } from 'react-native';
 const MAPPING = {
   // See MaterialIcons here: https://icons.expo.fyi
   // See SF Symbols in the SF Symbols app on Mac.
+
+  'creditcard.fill': 'credit-card',
   'house.fill': 'home',
+  'qrcode': 'qr-code',
+  'photo.on.rectangle.angled': 'photo',
   'paperplane.fill': 'send',
   'chevron.left.forwardslash.chevron.right': 'code',
   'chevron.right': 'chevron-right',
@@ -39,5 +43,6 @@ export function IconSymbol({
   style?: StyleProp<ViewStyle>;
   weight?: SymbolWeight;
 }) {
-  return <MaterialIcons color={color} size={size} name={MAPPING[name]} style={style} />;
+  // console.log("scanner icon: ", MAPPING['qrcode'])
+  return <MaterialIcons color={color} size={size} name={MAPPING[name]} />;
 }
